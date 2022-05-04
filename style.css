@@ -1,19 +1,20 @@
+/*=== GERAL =================================*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Variables ======================================== */
-
 :root {
   --primary-color: hsl(170, 100%, 26%);
   --headline: hsl(210, 11%, 15%);
   --paragraph: hsl(210, 9%, 31%);
+
   --brand-beige: hsl(39, 100%, 97%);
   --brand-light: hsl(148, 23%, 89%);
 
   font-size: 62.5%; /* 1rem = 10px */
+
   --nav-height: 7.2rem;
 }
 
@@ -24,7 +25,7 @@ body {
 }
 
 body {
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-size: 1.6rem;
 
   text-align: center;
@@ -42,14 +43,13 @@ ul {
   list-style: none;
 }
 
-li {
-  text-decoration: none;
+/*=== HEADER =================================*/
+header {
+  margin-top: calc(4.1rem + var(--nav-height));
 }
 
-/* === Header ======================================== */
-
 header::before {
-  content: "";
+  content: '';
   width: 100%;
   height: calc(108rem + var(--nav-height));
   background-color: var(--brand-light);
@@ -59,10 +59,6 @@ header::before {
   top: 0;
   left: 0;
   z-index: -1;
-}
-
-header {
-  margin-top: calc(4.1rem + var(--nav-height));
 }
 
 header h4 {
@@ -99,24 +95,24 @@ header button {
   height: 6.2rem;
   width: 26.3rem;
 
-  color: #fff;
-  text-transform: uppercase;
+  color: white;
   font-size: 1.4rem;
   font-weight: 700;
+  text-transform: uppercase;
 
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1.6rem;
 
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 header img {
   width: 26.4rem;
   display: block;
   margin-inline: auto;
-
   object-position: 0 2rem;
 }
 
@@ -125,7 +121,7 @@ header img {
   padding-block: 4rem;
   margin-inline: auto;
 
-  background: var(--brand-beige);
+  background-color: var(--brand-beige);
   border: 1px solid var(--brand-light);
   border-radius: 0.6rem;
 
@@ -146,10 +142,11 @@ header img {
 .stat p {
   margin: 0;
   color: var(--primary-color);
+  font-size: 1.6rem;
+  line-height: 150%;
 }
 
-/* === Navigation ======================================== */
-
+/*=== NAVIGATION =================================*/
 nav {
   display: flex;
 
@@ -160,6 +157,7 @@ nav {
   left: 50%;
   transform: translateX(-50%);
 }
+
 nav .wrapper {
   display: flex;
   align-items: center;
@@ -169,6 +167,8 @@ nav .wrapper {
 nav.scroll {
   background: var(--primary-color);
   width: 100vw;
+  position: fixed;
+  top: 0;
 }
 
 nav.scroll svg:nth-child(1) path {
@@ -185,8 +185,7 @@ nav button {
   cursor: pointer;
 }
 
-/* === Menu-Expanded ======================================== */
-
+/*=== MENU-EXPANDED =================================*/
 body.menu-expanded {
   overflow: hidden;
 }
@@ -242,7 +241,7 @@ body.menu-expanded nav {
 }
 
 .menu .button {
-  background: #fff;
+  background: white;
   border-radius: 4rem;
   font-weight: 700;
   font-size: 1.8rem;
@@ -267,7 +266,7 @@ body.menu-expanded nav {
 }
 
 body.menu-expanded .logo,
-body.menu-expanded nav button {
+body.menu-expanded button {
   position: relative;
   z-index: 100;
 }
