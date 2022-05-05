@@ -19,6 +19,10 @@
   --nav-height: 7.2rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   width: 100%;
