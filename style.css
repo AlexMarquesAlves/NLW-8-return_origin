@@ -341,3 +341,18 @@ body.menu-expanded button path {
 #services .card h3 {
   margin-block: 1.6rem;
 }
+
+/*=== ABOUT =================================*/
+#about {
+  text-align: left;
+  background-color: var(--brand-beige);
+}
+
+#about header h2 {
+  margin-bottom: 2.4rem;
+}
+
+#about .content p {
+  margin-top: 2.4rem;
+  margin-bottom: 6rem;
+}
