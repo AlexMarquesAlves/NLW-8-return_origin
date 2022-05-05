@@ -12,6 +12,7 @@
 
   --brand-beige: hsl(39, 100%, 97%);
   --brand-light: hsl(148, 23%, 89%);
+  --bg-light: hsl(180, 14%, 97%);
 
   font-size: 62.5%; /* 1rem = 10px */
 
@@ -25,12 +26,13 @@ body {
 }
 
 body {
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
   font-size: 1.6rem;
 
   text-align: center;
 
   overflow: overlay;
+  background: var(--bg-light);
 }
 
 .wrapper {
@@ -43,13 +45,16 @@ ul {
   list-style: none;
 }
 
+section {
+  padding-block: 10rem;
+}
 /*=== HEADER =================================*/
 header {
   margin-top: calc(4.1rem + var(--nav-height));
 }
 
 header::before {
-  content: '';
+  content: "";
   width: 100%;
   height: calc(108rem + var(--nav-height));
   background-color: var(--brand-light);
@@ -277,4 +282,39 @@ body.menu-expanded .logo path {
 
 body.menu-expanded button path {
   stroke: white;
+}
+
+/*=== SERVICES =================================*/
+
+#services header h4 {
+  font-size: 1.4rem;
+  line-height: 150%;
+  letter-spacing: 0.88rem;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+#services header h2 {
+  font-size: 3rem;
+  line-height: 3.9rem;
+
+  color: var(--headline);
+}
+
+#services .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+#services .card {
+  padding: 2.4rem;
+  text-align: left;
+  background: white;
+  border: 1px solid var(--brand-light);
+  border-radius: 0.6rem;
+}
+
+#services .card h3 {
+  margin-block: 1.6rem;
 }
