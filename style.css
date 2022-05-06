@@ -12,6 +12,7 @@
 
   --brand-beige: hsl(39, 100%, 97%);
   --brand-light: hsl(148, 23%, 89%);
+  --brand-dark: hsl(170, 100%, 14%);
 
   --bg-light: hsl(180, 14%, 97%);
 
@@ -104,6 +105,7 @@ section .content p {
   margin-bottom: 6rem;
 
   padding: 1.6rem 3.2rem;
+  width: fit-content;
 
   color: white;
   font-size: 1.4rem;
