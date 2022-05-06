@@ -394,10 +394,12 @@ body.menu-expanded button path {
   margin-bottom: 3.2rem;
 }
 
-#contact il {
+#contact ul {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+
+  margin-bottom: 3.2rem;
 }
 
 #contact ul li {
