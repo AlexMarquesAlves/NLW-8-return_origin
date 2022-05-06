@@ -118,6 +118,10 @@ section .content p {
   gap: 1.6rem;
 
   text-decoration: none;
+  transition: background 0.2s;
+}
+.button:hover {
+  background: var(--brand-dark);
 }
 /*=== NAVIGATION =================================*/
 nav {
