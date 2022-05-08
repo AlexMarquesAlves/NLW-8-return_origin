@@ -472,3 +472,34 @@ footer .social-links {
   visibility: visible;
   transform: translateY(0);
 }
+
+/*=== RESPONSIVO =================================*/
+
+@media (min-width: 1024px) {
+  /*=== GERAL =================================*/
+
+  /*=== NAVIGATION =================================*/
+
+  /* reset */
+
+  nav#navigation .wrapper * {
+    margin: 0;
+    padding: 0;
+    visibility: initial;
+    display: initial;
+    opacity: initial;
+    flex-direction: initial;
+    position: initial;
+    font-size: initial;
+    transform: initial;
+    color: initial;
+    background-color: initial;
+    font-weight: initial;
+  }
+
+  nav#navigation .close-menu,
+  nav#navigation .open-menu,
+  nav#navigation .social-links {
+    display: none;
+  }
+}
