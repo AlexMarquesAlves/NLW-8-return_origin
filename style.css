@@ -550,4 +550,9 @@ footer .social-links {
     border-color: #fff;
     color: #fff;
   }
+
+  nav#navigation .menu li a:hover {
+    opacity: 1;
+    font-weight: 700;
+  }
 }
