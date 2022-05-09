@@ -644,4 +644,11 @@ footer .social-links {
   #home .content p {
     font-size: 1.8rem;
   }
+
+  #home .stats {
+    grid-area: C;
+    flex-direction: row;
+    padding: 6rem;
+    gap: 0;
+  }
 }
