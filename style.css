@@ -632,4 +632,8 @@ footer .social-links {
     text-align: left;
     align-self: center;
   }
+
+  #home .col-b {
+    grid-area: B;
+  }
 }
