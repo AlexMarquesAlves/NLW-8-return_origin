@@ -626,4 +626,10 @@ footer .social-links {
     grid-template-columns: 60.5rem 1fr;
     grid-template-areas: "A B" "C C";
   }
+
+  #home .col-a {
+    grid-area: A;
+    text-align: left;
+    align-self: center;
+  }
 }
