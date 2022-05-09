@@ -640,4 +640,8 @@ footer .social-links {
   #home h1 {
     font-size: 5.2rem;
   }
+
+  #home .content p {
+    font-size: 1.8rem;
+  }
 }
