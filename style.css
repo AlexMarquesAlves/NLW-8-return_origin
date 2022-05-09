@@ -659,4 +659,8 @@ footer .social-links {
   #home .stats .stat {
     flex: 1;
   }
+
+  #home .button {
+    margin: 0;
+  }
 }
