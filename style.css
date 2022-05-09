@@ -663,4 +663,8 @@ footer .social-links {
   #home .button {
     margin: 0;
   }
+
+  #home img {
+    width: 42rem;
+  }
 }
