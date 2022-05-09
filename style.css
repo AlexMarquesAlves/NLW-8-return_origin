@@ -543,7 +543,7 @@ footer .social-links {
   }
 
   nav#navigation.scroll .menu ul li a {
-    color: var(--brand-light);
+    color: var(--brand-light-2);
     opacity: 0.6;
   }
 
