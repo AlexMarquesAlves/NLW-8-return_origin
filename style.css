@@ -501,6 +501,7 @@ footer .social-links {
     color: initial;
     background-color: initial;
     font-weight: initial;
+    filter: initial;
   }
 
   nav#navigation .close-menu,
@@ -540,6 +541,12 @@ footer .social-links {
     font-size: 1.4rem;
     line-height: 1.8rem;
     text-transform: uppercase;
+  }
+
+  nav#navigation .menu a.button:hover {
+    background: var(--primary-color);
+    border: none;
+    color: #fff;
   }
 
   nav#navigation.scroll .menu ul li a {
