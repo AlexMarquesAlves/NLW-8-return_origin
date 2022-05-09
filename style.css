@@ -584,4 +584,8 @@ footer .social-links {
     padding-inline: 0.8rem;
     width: 100%;
   }
+
+  nav#navigation.scroll .menu li a:hover {
+    opacity: 1;
+  }
 }
