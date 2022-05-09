@@ -540,4 +540,14 @@ footer .social-links {
     line-height: 1.8rem;
     text-transform: uppercase;
   }
+
+  nav#navigation.scroll .menu ul li a {
+    color: var(--brand-light);
+    opacity: 0.6;
+  }
+
+  nav#navigation.scroll .menu a.button {
+    border-color: #fff;
+    color: #fff;
+  }
 }
