@@ -569,4 +569,8 @@ footer .social-links {
 
     display: block;
   }
+
+  nav#navigation.scroll .menu li a::after {
+    background-color: #fff;
+  }
 }
