@@ -721,4 +721,10 @@ footer .social-links {
   #contact .content p {
     margin-bottom: 0;
   }
+
+  /*=== FOOTER =================================*/
+
+  footer {
+    padding-bottom: 8rem;
+  }
 }
