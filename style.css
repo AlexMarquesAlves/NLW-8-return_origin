@@ -727,4 +727,9 @@ footer .social-links {
   footer {
     padding-bottom: 8rem;
   }
+
+  footer .wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "A B";
+  }
 }
