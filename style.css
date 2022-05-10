@@ -717,4 +717,8 @@ footer .social-links {
   #contact h2 {
     width: 40.4rem;
   }
+
+  #contact .content p {
+    margin-bottom: 0;
+  }
 }
