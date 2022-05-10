@@ -682,6 +682,7 @@ footer .social-links {
   #services .cards {
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 4rem;
   }
 
   #services .card {
