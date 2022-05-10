@@ -741,4 +741,8 @@ footer .social-links {
     align-self: center;
     justify-self: end;
   }
+
+  footer p {
+    margin-bottom: 0;
+  }
 }
