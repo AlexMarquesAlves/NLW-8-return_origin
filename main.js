@@ -4,6 +4,11 @@ onScroll();
 function onScroll() {
   showNavOnScroll();
   showBackToTopButtonOnScroll();
+
+  activateMenuAtCurrentSection(home);
+  activateMenuAtCurrentSection(services);
+  activateMenuAtCurrentSection(about);
+  activateMenuAtCurrentSection(contact);
 }
 
 function activateMenuAtCurrentSection(section) {
