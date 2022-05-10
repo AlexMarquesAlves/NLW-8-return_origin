@@ -732,4 +732,8 @@ footer .social-links {
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas: "A B";
   }
+
+  footer .col-a {
+    align-self: center;
+  }
 }
