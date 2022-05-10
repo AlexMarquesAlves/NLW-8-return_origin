@@ -6,7 +6,7 @@
 }
 
 :root {
-  --hue: 170; /* 170 */
+  --hue: 0;
   --primary-color: hsl(var(--hue), 100%, 26%);
   --headline: hsl(210, 11%, 15%);
   --paragraph: hsl(210, 9%, 31%);
@@ -476,7 +476,6 @@ footer .social-links {
 }
 
 /*=== RESPONSIVO =================================*/
-
 @media (min-width: 1024px) {
   /*=== GERAL =================================*/
   body {
@@ -507,7 +506,6 @@ footer .social-links {
 
   /*=== NAVIGATION =================================*/
   /* reset */
-
   nav#navigation .wrapper * {
     margin: 0;
     padding: 0;
@@ -517,10 +515,10 @@ footer .social-links {
     flex-direction: initial;
     position: initial;
     font-size: initial;
+    font-weight: initial;
     transform: initial;
     color: initial;
     background-color: initial;
-    font-weight: initial;
     filter: initial;
   }
 
@@ -557,6 +555,7 @@ footer .social-links {
     border-radius: 4rem;
 
     color: var(--primary-color);
+
     font-weight: 700;
     font-size: 1.4rem;
     line-height: 1.8rem;
@@ -564,9 +563,9 @@ footer .social-links {
   }
 
   nav#navigation .menu a.button:hover {
-    background: var(--primary-color);
+    background-color: var(--primary-color);
     border: none;
-    color: #fff;
+    color: white;
   }
 
   nav#navigation.scroll .menu ul li a {
@@ -575,15 +574,15 @@ footer .social-links {
   }
 
   nav#navigation.scroll .menu a.button {
-    border-color: #fff;
-    color: #fff;
+    border-color: white;
+    color: white;
   }
 
   nav#navigation .menu li a {
     transition: opacity 0.4s;
   }
 
-  nav#navigation .menu li a:active,
+  nav#navigation .menu li a.active,
   nav#navigation .menu li a:hover {
     opacity: 1;
     font-weight: 700;
@@ -591,9 +590,9 @@ footer .social-links {
 
   nav#navigation .menu li a::after {
     content: "";
-    width: 0;
+    width: 0%;
     height: 2px;
-    background: var(--primary-color);
+    background-color: var(--primary-color);
 
     position: relative;
     bottom: -2rem;
@@ -605,23 +604,23 @@ footer .social-links {
   }
 
   nav#navigation.scroll .menu li a::after {
-    background-color: #fff;
+    background-color: white;
   }
 
-  nav#navigation .menu li a:active::after,
+  nav#navigation .menu li a.active::after,
   nav#navigation .menu li a:hover::after {
     padding-inline: 0.8rem;
     width: 100%;
   }
 
-  nav#navigation.scroll .menu li a:active,
+  nav#navigation.scroll .menu li a.active,
   nav#navigation.scroll .menu li a:hover {
     opacity: 1;
   }
 
   nav#navigation.scroll .menu a.button.active,
   nav#navigation.scroll .menu a.button:hover {
-    background: var(--primary-color);
+    background-color: var(--primary-color);
     filter: brightness(1.3);
     border: none;
   }
@@ -637,7 +636,9 @@ footer .social-links {
 
   #home .wrapper {
     grid-template-columns: 60.5rem 1fr;
-    grid-template-areas: "A B" "C C";
+    grid-template-areas:
+      "A B"
+      "C C";
   }
 
   #home .col-a {
@@ -655,6 +656,7 @@ footer .social-links {
 
   #home .stats {
     grid-area: C;
+
     flex-direction: row;
     padding: 6rem;
     gap: 0;
@@ -695,7 +697,7 @@ footer .social-links {
 
   /*=== ABOUT =================================*/
   #about .wrapper {
-    grid-template-columns: 48rem, 1fr;
+    grid-template-columns: 48rem 1fr;
     grid-template-areas: "B A";
     gap: 6.7rem;
   }
@@ -709,8 +711,9 @@ footer .social-links {
   }
 
   /*=== CONTACT =================================*/
+
   #contact .wrapper {
-    grid-template-columns: 1fr, 57.5rem;
+    grid-template-columns: 1fr 57.5rem;
     grid-template-areas: "A B";
   }
 
@@ -718,18 +721,13 @@ footer .social-links {
     width: 40.4rem;
   }
 
-  #contact .content p {
-    margin-bottom: 0;
-  }
-
   /*=== FOOTER =================================*/
-
   footer {
-    padding-bottom: 8rem;
+    padding-block: 8rem;
   }
 
   footer .wrapper {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: "A B";
   }
 
@@ -739,7 +737,7 @@ footer .social-links {
 
   footer .col-b {
     align-self: center;
-    justify-self: end;
+    justify-self: flex-end;
   }
 
   footer p {

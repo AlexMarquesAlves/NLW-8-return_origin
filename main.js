@@ -13,23 +13,23 @@ function onScroll() {
 
 function activateMenuAtCurrentSection(section) {
   const targetLine = scrollY + innerHeight / 2;
-  // Verificar se a seção passou da linha
-  // Quais dados vou precisar?
+
+  // verificar se a seção passou da linha
+  // quais dados vou precisar?
   const sectionTop = section.offsetTop;
   const sectionHeight = section.offsetHeight;
+  const sectionTopReachOrPassedTargetline = targetLine >= sectionTop;
 
-  const sectionTopReachOrPassedTargetLine = targetLine >= sectionTop;
+  // verificar se a base está abaixo da linha alvo
 
   const sectionEndsAt = sectionTop + sectionHeight;
+  const sectionEndPassedTargetline = sectionEndsAt <= targetLine;
 
-  const sectionEndPassedTargetLine = sectionEndsAt <= targetLine;
-
-  // Limites da seção
+  // limites da seção
   const sectionBoundaries =
-    sectionTopReachOrPassedTargetLine && !sectionEndPassedTargetLine;
+    sectionTopReachOrPassedTargetline && !sectionEndPassedTargetline;
 
-  const sectionId = section.getAttribute(`id`);
-
+  const sectionId = section.getAttribute("id");
   const menuElement = document.querySelector(`.menu a[href*=${sectionId}]`);
 
   menuElement.classList.remove("active");
