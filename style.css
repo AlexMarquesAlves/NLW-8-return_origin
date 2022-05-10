@@ -683,4 +683,9 @@ footer .social-links {
     flex-direction: row;
     flex-wrap: wrap;
   }
+
+  #services .card {
+    width: 30%;
+    flex-grow: 1;
+  }
 }
