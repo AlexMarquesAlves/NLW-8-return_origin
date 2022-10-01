@@ -164,7 +164,7 @@ nav {
   display: flex;
 
   height: var(--nav-height);
-
+  background: var(--brand-beige);
   position: fixed;
   top: 0;
   width: 100vw;
